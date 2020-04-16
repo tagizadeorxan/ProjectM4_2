@@ -1,240 +1,164 @@
-body{
-  font-family: 'Roboto', sans-serif;
-  margin: auto;
-
-
-}
-.navbar {
-    overflow: hidden;
-    background-color: #F5F5F6;
-    top: 0;
-    width: 100%;  
-    display: inline-block;
-    float: none;
-    text-align: center;
-
-  }
-  img {
-    float: left;
-    margin-top:10px;
-    margin-left: 270px;
-  }
-  nav a  {
-    float: left;
-    display: block;
-    color: #959BA4;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13.5px;
-    margin-left: 5px;
-   
-  }
-
-  .link {
-    margin-left: 500px;
-  }
-  
-  nav a:hover {
-    background: #ddd;
-    color: #000000;
-  }
-
-  .main {
-    margin-left:500px;
-    padding: 16px;
-    margin-top: 100px;
-    height: 1500px; /* Used in this example to enable scrolling */
-    width: 1500px;
-    
-  }
-
-  .currency {
-      display: flex;
-      flex-direction: row;
-  }
-
-  .container-1 {
-      width: 320px;
-      
-  }
-.container-2 {
-    width: 320px;
+body {
+    background-image: url('cool-background.png');
+    font-family: 'Roboto', sans-serif;
+    color: #6F6E75;
+    display: flex;
 }
 
-.enter {
-    top:15px;
-    float: right;
-    margin-right: 650px;
-    margin-top:5px;
-    background-color: #FFFFFF;
-    border:0;
-    width: 58px;
-    height: 33px;
+  html, body {
+    margin: 0;
+    padding: 0;
+}
+.main-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-top:11px;
+
+}
+.background{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    z-index:0;
+}
+.main-form{
+    margin:70px auto;
+    display:flex;
+    width:60%;
+    position:relative;
+    box-sizing: border-box;
+    opacity:0.7;
+}
+
+.form{
+    width:30%;
+    background:white;
+    border-radius:25px;
+}
+label{
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top:10px;
+}
+input{
+    height:23px;
+    margin:5px;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    border:0;
+    border-bottom:0.5px solid lightgray;
+    width:85%;
+    text-align:center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label, input, select{
+    display: block;
+    margin:0 auto;
+    border-radius:1px;
+}
+
+.finalNotesBox{
+    width: 50%;
+    display:flex;
+    position:relative;
+    margin:0 auto;
+    border:1px solid black;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+.result{
+    width:80%;
+    height: 40px;
+    display:flex;
+    margin:30px auto;
+    border:1px solid black;
+    box-sizing: border-box;
+    position:relative;
 }
 
 
-
-.maintext {
-  font-size: 45px;
-  font-weight: bold;
- 
-}
-p {
-  color: #9F9F9F;
-  font-size: 12;
-  margin-top:60px;
+.delete-img{
+    width:30px;
+    margin:0 auto;
 }
 
-.number{
-  width: 259px;
-  height: 102px;
-  margin-right: 0;
-  border: 1px solid #E5E5E5;
-  display: flex;
-  flex-direction: column;
-  
-}
-.number-up {
-   font-size: 36px;
-   font-weight: bold;
-   color: #000000;
-   margin-top: 15px;
-   margin-left: 10px;
+.more-info{
+    width:30px;
+    margin:0 auto;
 }
 
-.number-down {
-  color: #C6C6C6;
-  font-weight: 12;
-  margin-top: 20px;
-  margin-left: 10px;
+p{
+    text-align:center;
+    font-size:13px;
+    font-family: 'Roboto', sans-serif;
 }
 
-#button {
-  margin-right: 42px;
-  margin-top:170px;
-  margin-left:20px;
-  width:80px;
-  height: 60px;
+.add{
+    width:100%;
+    height: 40px;
+    background-color: #6DA549;
+    position:relative;
+    margin:0 auto;
+    margin-top:10px;
+    border:0.5px solid lightgray;
+    width:40%;
+    margin-bottom:10px;
+    display: inline-block;
+    margin-left:15px;
+    border-radius:5px;
+    color:white;
 }
 
-.currencies { 
-  color: 1px solid #C6C6C6;
-  text-align: start;
-  margin-bottom: 20px;
-  display: inline-flex;
- 
+.clear{
+    width:100%;
+    height: 40px;
+    background-color: #6DA549;
+    position:relative;
+    margin:0 auto;
+    margin-top:10px;
+    border:0.5px solid lightgray;
+    width:40%;
+    margin-bottom:10px;
+    display: inline-block;
+    margin-left:15px;
+    border-radius:5px;
+    color:white;
 }
 
-.select {
-  border: 1px solid #C6C6C6;
-  border-left: 0;
-  padding:5px 0px;
-  width: 56px;
-  height: 18px;
-  color: #C6C6C6;
-  text-align: center;
-  cursor: default;
+.goal-n-deposit{
+    width: 441px;
+    border-radius: 30px;
+    padding: 40px 45px;
+    width: 30%
 }
 
-
-.option {
-  white-space: normal;
-  border: 1px solid #C6C6C6;
-  background-repeat:no-repeat;
-  padding-left: 20px;
-	background-size:16px 17px;
-  background-position:right 0px;
-  width: 70px;
-  
-  background-image: url(images/arrowIcon.png);
-  background-position:center 5px;
-  appearance:none;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	-ms-appearance:none;
-  
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-  
+.button-second{
+    height: 40px;
+    background-color: #6DA549;
+    border:0.5px solid lightgray;
+    border-radius:5px;
+    color:white;
+    width: 117px;
+    margin: 0 20px 0 0;
 }
-
-
-#input-number-1 {
-  outline-color: white;
-}
-
-#input-number-2 {
-  outline-color: white;
-}
-
-
-
-#number-1 {
-   width: 300px;
-   outline: none;
-}
-
-
-#number-2 {
-  width: 300px;
-}
-
-input {
-  border:0;
-  outline: none;
-  
-}
-
-
-.firstEdit {
-  border-left: 1px solid;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
-}
-
-
-.hide {
-    display: none;
-}
-
-.show {
- 
-  position: absolute;
-  text-align: center;
-  top: 32%;
-  margin-left: 833px;
-  margin-bottom: 200px;
-  margin-top: 55px;
-  width: 129px;
-  height: 54px;
-  background: lightgray;
-  border: 1px solid lightgray;
-  justify-content: center;
-  border-radius: 5px;
-  font-size: 24px;
-  -webkit-appearance: button;
-}
-
-
-
-
-.defaultCurrency {
-  background-color: "#833AE0";
-  color : "white";
-}
-
-.defaultCurrencyRemove {
-  background-color:"white";
-  color:#C6C6C6;
-}
-
-
-
-
-
-
-
-/* aniamtion */
-
