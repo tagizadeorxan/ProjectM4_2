@@ -2,27 +2,40 @@
 <html lang="en">
 
 <head>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-
-	
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project M4_1</title>
-  <link href="style.css" rel="stylesheet">
-  
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-
-<body id="body">
- 
-
-
-  <script src="index.js"></script>
-
-
+<body>
+    <p class='main-text'>Enter your goals and get ready suggestions to archieve them!</p>
+    <div class="main-form">
+        <form action='#' class = 'form'>
+            <div>
+                <label for='name'>Goal name</label>
+                <input id='name' type='text'>
+            </div>
+            <div>
+                <label for='summ'>Required amount</label>
+                <input id='summ' type='number'>
+            </div>
+            <div>
+                <label for='duration'>Months left</label>
+                <input id='duration' type='number'>
+            </div>
+            <div>
+                <label for='startAmount'>Initial amount</label>
+                <input id='startAmount' type='number'>
+            </div>
+            <button type="submit" class="add" >ADD</button>
+            <button type="submit" class="clear" >CLEAR</button>
+        </form>
+        </div>
+    </div>
+    <canvas class="background"></canvas>
+    <script src='script.js'></script>
 </body>
-
-
 </html>
