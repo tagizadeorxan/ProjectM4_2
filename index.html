@@ -18,42 +18,32 @@
 
         <form action='#' class='form'>
             <div>
-                <label for='name'>Goal name</label><input id='name' type='text'>
+                <label for='name'>Goal name</label><input id='title' type='text' required>
             </div>
             <div>
-                <label for='summ'>Required amount</label><input id='summ' type='number'>
+                <label for='summ'>Required amount</label><input id='amount' type='number' required>
             </div>
             <div>
-                <label for='duration'>Months left</label><input id='duration' type='number'>
+                <label for='duration'>Months left</label><input id='term' type='number' required>
             </div>
             <div>
-                <label for='startAmount'>Initial amount</label><input id='startAmount' type='number'>
+                <label for='startAmount'>Initial amount</label><input id='startamount' type='number' required>
             </div>
 
-            <button type="submit" class="add">ADD</button>
-            <button type="submit" class="clear">CLEAR</button>
-
+            <button type="submit" id="addgoal" class="add">ADD</button>
+            <button type="reset" id="clear" class="clear">CLEAR</button>
+</div>
         </form>
         <section class="goal-n-deposit">
-            <h1 class="goal-name-heading">Goal name</h1>
-            <button type="button" class="button-second more-info">MORE INFO</button>
-            <button type="button" class="button-second edit">EDIT</button>
-            <button type="button" class="button-second delete-info">DELETE</button>
-            <h2 class="deposit-name">Deposit</h2>
-            <table class="result-table">
-                <tr>
-                    <td>Deposit name</td>
-                    <td>Rubles</td>
-                    <td>Time</td>
-                    <td>Final amount</td>
-                </tr>
+            <div id="goalObjects"></div>
+
             </table>
         </section>
         
 
-    </div>
+    
     <canvas class="background"></canvas>
-    <script src='script.js'></script>
+    <script type="module" src='index.mjs'></script>
 </body>
 
 </html>

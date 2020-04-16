@@ -4,8 +4,8 @@
   "description": "Doing something",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "prettier:fix": "prettier \"index.js\" --write",
+    "start": "node index.mjs",
+    "prettier:fix": "prettier \"index.mjs\" --write",
     "build": "webpack",
     "build:prod": "webpack --config webpack.prod.config.js",
     "ignore":"gitignore"

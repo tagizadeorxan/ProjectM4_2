@@ -1,6 +1,6 @@
 module.exports = {
     mode: 'production',
-    entry: './index.js',
+    entry: './index.mjs',
     output: {
         filename: './main.minified.js',
     },

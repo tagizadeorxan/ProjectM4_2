@@ -227,3 +227,12 @@ td{
 padding-left:50px;
 justify-content: space-between;
 }
+
+
+.detailed {
+    margin-left: 45px;
+}
+
+.displaynone{
+    display: none;
+}
