@@ -1,10 +1,14 @@
 body {
-    background-image: url('cool-background.png');
+    background-image: url('images/cool-background.png');
+    
   }
 
   html, body {
     margin: 0;
     padding: 0;
+}
+div{
+    padding-top:8px;
 }
 .main-text{
     font-family: Roboto;
@@ -15,13 +19,7 @@ body {
     padding-top:11px;
 
 }
-.background{
-    position:absolute;
-    display:block;
-    top:0;
-    left:0;
-    z-index:0;
-}
+
 .main-form{
     margin:70px auto;
     display:flex;
@@ -29,19 +27,21 @@ body {
     position:relative;
     box-sizing: border-box;
     opacity:0.7;
-    
+    /* display:none; */
 }
 
+
 .form{
-    width:30%;
+    width:40%;
     background:white;
-    border-radius:25px;
+    border-radius:20px;
 }
 label{
     font-size:18px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-top:10px;
+    padding-left:10px;
 }
 input{
     height:23px;
@@ -54,8 +54,16 @@ input{
     color: #000000;
     border:0;
     border-bottom:0.5px solid lightgray;
-    width:85%;
+    width:40%;
     text-align:center;
+    margin:0 auto;
+    border-radius:1px;
+    float: right;
+    margin-right:10px;
+    margin-top:5px;
+    
+    
+  
     
 }
 /* Chrome, Safari, Edge, Opera */
@@ -69,10 +77,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-label, input, select{
-    display: block;
+
+
+label, select{
+    display: inline-block;
     margin:0 auto;
     border-radius:1px;
+    
 }
 
 .finalNotesBox{
@@ -83,6 +94,7 @@ label, input, select{
     border:1px solid black;
     box-sizing: border-box;
     margin-right: 0;
+    
 }
 
 .result{
@@ -93,6 +105,7 @@ label, input, select{
     border:1px solid black;
     box-sizing: border-box;
     position:relative;
+    
 }
 
 
@@ -104,6 +117,7 @@ label, input, select{
 .more-info{
     width:30px;
     margin:0 auto;
+   
 }
 
 p{
@@ -123,7 +137,7 @@ p{
     width:40%;
     margin-bottom:10px;
     display: inline-block;
-    margin-left:15px;
+    margin-left:20px;
     border-radius:5px;
     color:white;
 }
@@ -139,7 +153,77 @@ p{
     width:40%;
     margin-bottom:10px;
     display: inline-block;
-    margin-left:15px;
+    margin-left:22px;
     border-radius:5px;
     color:white;
+}
+
+.addGoal{
+    width:100px;
+    height: 50px;
+    display:block;
+    margin:0 auto;
+}
+
+.goal-n-deposit{
+    display:block;
+    width:500px;
+    background-color:white;
+    margin-left:100px;
+    border-bottom:1px solid black;
+    border-radius:20px;
+}
+
+.button-second.more-info{
+    background-color:green;
+    width:100px;
+    margin-left:47px;
+}
+
+.button-second.edit{
+    background-color:green;
+    width:100px;
+    margin-left:26px;
+}
+.button-second.delete-info{
+    background-color:green;
+    width:100px;
+    margin-left:26px;
+}
+
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+/* identical to box height */
+    color: #6F6E75;
+    margin-left:56px;
+}
+
+h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    color: #6F6E75;
+    margin-left:56px;
+}
+td{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E75;
+    justify-content: space-between;
+    padding-left:4px;   
+    
+}
+.result-table{
+padding-left:50px;
+justify-content: space-between;
 }
