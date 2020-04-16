@@ -2,7 +2,7 @@ module.exports = {
     mode: 'development',
     entry: './index.js',
     output: {
-        filename: './dist/main.js',
+        filename: './main.js',
     },
 
     //BABEL 

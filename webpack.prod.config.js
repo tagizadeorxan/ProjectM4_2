@@ -2,7 +2,7 @@ module.exports = {
     mode: 'production',
     entry: './index.js',
     output: {
-        filename: './dist/main.minified.js',
+        filename: './main.minified.js',
     },
 
 //BABEL 

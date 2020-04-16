@@ -1,15 +1,24 @@
 body{
-  font-family: "Roboto",sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+
+
 }
-nav {
+.navbar {
     overflow: hidden;
     background-color: #F5F5F6;
-    position: fixed;
     top: 0;
-    width: 100%;
-    
+    width: 100%;  
+    display: inline-block;
+    float: none;
+    text-align: center;
+
   }
- 
+  img {
+    float: left;
+    margin-top:10px;
+    margin-left: 270px;
+  }
   nav a  {
     float: left;
     display: block;
@@ -19,6 +28,7 @@ nav {
     text-decoration: none;
     font-size: 13.5px;
     margin-left: 5px;
+   
   }
 
   .link {
@@ -39,59 +49,192 @@ nav {
     
   }
 
-table tr td {
-  border: 1px solid #900c3f;
+  .currency {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .container-1 {
+      width: 320px;
+      
+  }
+.container-2 {
+    width: 320px;
+}
+
+.enter {
+    top:15px;
+    float: right;
+    margin-right: 650px;
+    margin-top:5px;
+    background-color: #FFFFFF;
+    border:0;
+    width: 58px;
+    height: 33px;
+    font-weight: bold;
+}
+
+
+
+.maintext {
+  font-size: 45px;
+  font-weight: bold;
+ 
+}
+p {
+  color: #9F9F9F;
+  font-size: 12;
+  margin-top:60px;
+}
+
+.number{
+  width: 259px;
+  height: 102px;
+  margin-right: 0;
+  border: 1px solid #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  
+}
+.number-up {
+   font-size: 36px;
+   font-weight: bold;
+   color: #000000;
+   margin-top: 15px;
+   margin-left: 10px;
+}
+
+.number-down {
+  color: #C6C6C6;
+  font-weight: 12;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#button {
+  margin-right: 42px;
+  margin-top:170px;
+  margin-left:20px;
+  width:80px;
+  height: 60px;
+}
+
+.currencies { 
+  color: 1px solid #C6C6C6;
+  text-align: start;
+  margin-bottom: 20px;
+  display: inline-flex;
+ 
+}
+
+.select {
+  border: 1px solid #C6C6C6;
+  border-left: 0;
+  padding:5px 0px;
+  width: 56px;
+  height: 18px;
+  color: #C6C6C6;
+  text-align: center;
+  cursor: default;
+}
+
+
+.option {
+  white-space: normal;
+  border: 1px solid #C6C6C6;
+  background-repeat:no-repeat;
+  padding-left: 20px;
+	background-size:16px 17px;
+  background-position:right 0px;
+  width: 70px;
+  
+  background-image: url(images/arrowIcon.png);
+  background-position:center 5px;
+  appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+  
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
   
 }
 
-table {
-  table-layout: fixed;
-  margin-top: 50px;
-  border-collapse: collapse;
-  width: 500px;
-  height: 500px;
+
+#input-number-1 {
+  outline-color: white;
 }
 
-tbody>tr>:nth-child(1){ 
+#input-number-2 {
+  outline-color: white;
+}
+
+
+
+#number-1 {
+   width: 300px;
+   outline: none;
+}
+
+
+#number-2 {
+  width: 300px;
+}
+
+input {
+  border:0;
+  outline: none;
+  
+}
+
+
+.firstEdit {
+  border-left: 1px solid;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+ 
+  position: absolute;
   text-align: center;
-  font-weight: bold;
-  color:#511845;
-  }
-
-table>tr>:nth-child(1){ 
-  text-align: center;
-  font-weight: bold;
-  color:#511845;
-  }
-
-  table>tr>:nth-child(2){ 
-    text-align: end;
-    }
-    tbody>tr>:nth-child(2){ 
-      text-align: end;
-      }
+  top: 32%;
+  margin-left: 833px;
+  margin-bottom: 200px;
+  margin-top: 55px;
+  width: 129px;
+  height: 54px;
+  background: lightgray;
+  border: 1px solid lightgray;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 24px;
+  -webkit-appearance: button;
+}
 
 
-      .select {
-        width: 100px;
-        height: 40px;
-        text-align-last:center;
-        outline-color: coral;
-      }
-      .input {
-        width: 180px;
-        height: 34px;
-      }
 
-      button {
-        width: 100px;
-        height: 42px;
-        background-color: #511845;
-        border:0;
-        color:white;
-      }
 
-      .maintext {
-        font-size: large;
-        font-weight: bold;
-      }
+.defaultCurrency {
+  background-color: "#833AE0";
+  color : "white";
+}
+
+.defaultCurrencyRemove {
+  background-color:"white";
+  color:#C6C6C6;
+}
+
+
+
+
+
+
+
+/* aniamtion */
+
