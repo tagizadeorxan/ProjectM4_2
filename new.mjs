@@ -4,7 +4,8 @@ export default class Deposit {
     }
     calculate() {
         let finalResult = [];
-        let array = fetch("https://5e8e012722d8cd0016a79e5c.mockapi.io/deposits").then(data => data.json()).then(data => {
+        
+        let array = fetch("https://bolta.herokuapp.com/deposits").then(data => data.json()).then(data => {
             let newData = [];
             let sum = Number(this.object.startamount);
             data.forEach(element => {
@@ -18,7 +19,7 @@ export default class Deposit {
                         newData.push(element)
                     }
                 }
-            });
+            })
             newData.sort((a, b) => a.income > b.income ? -1 : 1);
             if (newData.length < 1) {
                 return 0;
@@ -26,7 +27,7 @@ export default class Deposit {
                 return newData[0];
             }
 
-        })
+        }).catch(() => alert("Right now server is not working properly please try it again later. Sorry for a bad connection"));
 
         return array;
 

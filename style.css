@@ -1,238 +1,212 @@
-body {
-    background-image: url('images/cool-background.png');
-    
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-}
-div{
-    padding-top:8px;
-}
-.main-text{
-    font-family: Roboto;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 23px;
-    color: #FFFFFF;
-    padding-top:11px;
-
+* {
+    font-family: "Roboto",sans-serif;
 }
 
-.main-form{
-    margin:70px auto;
-    display:flex;
-    width:60%;
-    position:relative;
-    box-sizing: border-box;
-    opacity:0.7;
-    /* display:none; */
-}
-
-
-.form{
-    width:40%;
-    background:white;
-    border-radius:20px;
-}
-label{
-    font-size:18px;
-    font-family: 'Roboto', sans-serif;
+.main-form {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding-top:10px;
-    padding-left:10px;
 }
-input{
-    height:23px;
-    margin:5px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 20px;
-    color: #000000;
-    border:0;
-    border-bottom:0.5px solid lightgray;
-    width:40%;
-    text-align:center;
-    margin:0 auto;
-    border-radius:1px;
-    float: right;
-    margin-right:10px;
-    margin-top:5px;
+
+
+
+img{
+    margin-left:860px;
+    text-align: center;
+    margin-bottom: 100px;
+    width:300px;
+    height:150px;
     
-    
-  
-    
-}
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
-
-label, select{
-    display: inline-block;
-    margin:0 auto;
-    border-radius:1px;
-    
-}
-
-.finalNotesBox{
-    width: 50%;
-    display:flex;
-    position:relative;
-    margin:0 auto;
-    border:1px solid black;
-    box-sizing: border-box;
-    margin-right: 0;
-    
-}
-
-.result{
-    width:80%;
-    height: 40px;
-    display:flex;
-    margin:30px auto;
-    border:1px solid black;
-    box-sizing: border-box;
-    position:relative;
-    
-}
-
-
-.delete-img{
-    width:30px;
-    margin:0 auto;
-}
-
-.more-info{
-    width:30px;
-    margin:0 auto;
-   
-}
-
-p{
-    text-align:center;
-    font-size:13px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.add{
-    width:100%;
-    height: 40px;
-    background-color: #6DA549;
-    position:relative;
-    margin:0 auto;
-    margin-top:10px;
-    border:0.5px solid lightgray;
-    width:40%;
-    margin-bottom:10px;
-    display: inline-block;
-    margin-left:20px;
-    border-radius:5px;
-    color:white;
-}
-
-.clear{
-    width:100%;
-    height: 40px;
-    background-color: #6DA549;
-    position:relative;
-    margin:0 auto;
-    margin-top:10px;
-    border:0.5px solid lightgray;
-    width:40%;
-    margin-bottom:10px;
-    display: inline-block;
-    margin-left:22px;
-    border-radius:5px;
-    color:white;
-}
-
-.addGoal{
-    width:100px;
-    height: 50px;
-    display:block;
-    margin:0 auto;
-}
-
-.goal-n-deposit{
-    display:block;
-    width:500px;
-    background-color:white;
-    margin-left:100px;
-    border-bottom:1px solid black;
-    border-radius:20px;
-}
-
-.button-second.more-info{
-    background-color:green;
-    width:100px;
-    margin-left:47px;
-}
-
-.button-second.edit{
-    background-color:green;
-    width:100px;
-    margin-left:26px;
-}
-.button-second.delete-info{
-    background-color:green;
-    width:100px;
-    margin-left:26px;
-}
-
-h1{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-/* identical to box height */
-    color: #6F6E75;
-    margin-left:56px;
-}
-
-h2{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    /* identical to box height */
-    color: #6F6E75;
-    margin-left:56px;
-}
-td{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #6F6E75;
-    justify-content: space-between;
-    padding-left:4px;   
-    
-}
-.result-table{
-padding-left:50px;
-justify-content: space-between;
-}
-
-
-.detailed {
-    margin-left: 45px;
 }
 
 .displaynone{
     display: none;
 }
+
+.display{
+    display: block;
+}
+
+
+.result{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: start;
+}
+
+.add  {
+    margin-top: 10px;
+}
+
+.goalObject {
+    background: #bbb;
+    display: flex;
+    zoom: 1;
+    *display: inline;
+    padding: 14px;
+    color: black;
+    flex-direction: column;
+    
+ 
+}
+
+.form-control {
+    margin-bottom: 12px;
+}
+
+
+label {
+        color:white;
+        width: 250px;
+        font-size: 125%;
+        margin-bottom: 30px;
+        padding: 10px;
+        border: 1px solid transparent; 
+        border-radius: 1px;
+        
+}
+
+.detailed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.goalObject {
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
+input {
+        background-color: #ccc;
+        float: right;
+        font-size: 125%;
+        min-width: 70px;
+        padding: 10px 15px;
+        border: 1px solid transparent; 
+        color: #333;
+        border-radius: 1px;
+        text-align: start; 
+        
+}
+
+
+input :hover, input:active{
+        border: 1px solid #fff;
+        background-color: #bbb;
+        box-shadow: 0 0 8px #fff;
+    
+}
+
+input:focus {
+    box-shadow: 0 0 1.5px 1px #bbb;
+} 
+
+
+li {
+    text-align: start;
+}
+
+body {
+   
+    
+   background-image: url(images/wp2757874.gif);
+  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  div[class*=box] {
+      height: 33.33%;
+      width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body {
+    background-color: rgb(20, 20, 20);
+    color:white;
+}
+
+
+  /* .box-2 { background-color: rgb(20, 20, 20);; } */
+  
+  
+  .btn {
+      line-height: 50px;
+      height: 50px;
+      text-align: center;
+      width: 50px;
+      cursor: pointer;
+  }
+  
+  .button {
+      margin-top:20px;
+      display: flex;
+      
+
+  }
+  /* 
+  ========================
+        BUTTON ONE
+  ========================
+  */
+  
+.btn-two {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;	
+}
+.btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+    /* background-color: rgba(255,255,255,0.1); */
+    background-color:rgb(33, 35, 50);
+   
+}
+.btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	/* background-color: #3C3C3C; */
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: #3C3C3C;
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  /* background-color: #3C3C3C; */
+  background-color: 	rgb(150, 45, 54)
+}
+  

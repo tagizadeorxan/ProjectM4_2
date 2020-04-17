@@ -7,40 +7,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     </link>
+    <link href="animations.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
 
-    <p class='main-text'>Enter your goals and get ready suggestions to archieve them!</p>
+    <img src="images/success.gif" class='main-text floating'></img>
     <!-- <button class='addGoal'>Add goal</button> -->
     <div class="main-form">
 
         <form action='#' class='form'>
-            <div>
-                <label for='name'>Goal name</label><input id='title' type='text' required>
+            <div > 
+                <label class="slideRight pulse" for='title'>Goal name</label><input autocomplete="off" class="slideDown" id='title' type='text' required>
+            </div>
+            <div >
+                <label class="slideRight pulse"for='amount'>Required amount</label><input autocomplete="off" class="slideDown" id='amount' type='number' required>
+            </div>
+            <div >
+                <label class="slideRight pulse"for='term'>Months left</label><input autocomplete="off" class="slideDown" id='term' type='number' required>
             </div>
             <div>
-                <label for='summ'>Required amount</label><input id='amount' type='number' required>
+                <label class="slideRight pulse"for='startamount'>Initial amount</label><input autocomplete="off" class="slideDown" id='startamount' type='number' required>
             </div>
-            <div>
-                <label for='duration'>Months left</label><input id='term' type='number' required>
-            </div>
-            <div>
-                <label for='startAmount'>Initial amount</label><input id='startamount' type='number' required>
-            </div>
+           </form>
+            <!-- <button type="submit" id="addgoal" class="add">ADD</button>
+            <button type="reset" id="clear" class="clear">CLEAR</button> -->
+   <div class="button">
+            <div id="added" class="box-2">
+                <div id="addgoal" class="btn btn-two button">
+                  <span >+</span>
+                </div>
+              </div>
 
-            <button type="submit" id="addgoal" class="add">ADD</button>
-            <button type="reset" id="clear" class="clear">CLEAR</button>
-</div>
-        </form>
-        <section class="goal-n-deposit">
+              <div id="cleared" class="box-2">
+                <div id="clear" class="btn btn-two button">
+                  <span>x</span>
+                </div>
+              </div>
+
+
+              <div id="edit" class="displaynone">
+                <div  class="btn btn-two button">
+                  <span>done</span>
+                </div>
+              </div>
+
+              <div id="cancel" class="displaynone">
+                <div  class="btn btn-two button">
+                  <span>cancel</span>
+                </div>
+              </div>
+        </div>
+        <section class="result">
             <div id="goalObjects"></div>
 
             </table>
         </section>
         
-
+       
     
     <canvas class="background"></canvas>
     <script type="module" src='index.mjs'></script>
